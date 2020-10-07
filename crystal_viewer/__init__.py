@@ -12,6 +12,15 @@ def run():
     database = CrystalsDatabase()
     main_window = MainCrystalViewer(database)
     main_window.show()
+
+    try:
+        import qdarkgraystyle as style
+
+        stylesheet = style.load_stylesheet()
+        qapp.setStyleSheet(stylesheet)
+    except ImportError:
+        style = None
+
     sys.exit(qapp.exec_())
 
 

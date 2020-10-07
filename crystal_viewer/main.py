@@ -2,7 +2,7 @@ from PyQt5.QtWidgets import QWidget, QMainWindow, QGridLayout, QSplitter
 from PyQt5.QtCore import Qt
 
 from .list_widgets import DatabaseWindow, SelectedCrystalsWindow
-from .viewer_3d import Crystal3DWidget
+from .gl_viewer import Crystal3DWidget
 from .func import CrystalsDatabase, CustomCrystal
 from .file_dialogs import get_cif_folder_dialog, get_cif_file_dialog
 
